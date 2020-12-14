@@ -1,0 +1,22 @@
+<h1 class="titulo">LOGIN</h1>
+
+<p class="paragrafo">Se esta procurando um curso de inglês para o dia a dia com um valor bem acessível, então esse é o
+  seu curso.</p><br />
+
+<hr>
+<a class="link" id="link" href="http://localhost:8081/usuarios/login"> Login </a>|
+<a class="link" id="link" href="http://localhost:8081/usuarios/registro"> Cadastro de Usuário </a>
+<hr><br>
+
+  {{#if error}}
+  <div id="erro" class="alert alert-danger">{{this.error}}</div>
+  {{else}}
+  
+  {{/if}}<br>
+
+<form action="/usuarios/login" id="login" method="POST">
+  <h2 class="cad">Login</h2>
+  <input class="camplog" type="email" name="email" placeholder="✉ E-mail" required>
+  <input class="camplog" type="password" name="senha" placeholder="✔ Senha" required>
+  <input class="cadast_login" type="submit" name="" value="Entrar">
+</form><br>

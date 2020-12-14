@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/bandeira.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	font-family: verdana;
+}
+
+header {
+	background-image: linear-gradient(to right, rgba(0, 0, 85, 0.9), rgba(255, 0,0 , 0.8));
+	color: white;
+	font-weight: bold;
+	font-size: 18pt;
+	line-height: 22pt;
+	position: fixed;
+	right: 0;
+	left: 0;
+	width: 80%;
+	padding: 15px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: white 2px solid;
+}
+
+table.cabecalho {
+	width: 100%;
+	text-align: center;
+}
+
+a.atalho {
+	color: white;
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.atalho:visited {
+	color: white;
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+section.conteudo {
+	background-color: white;
+	font-size: 16pt;
+	text-align: justify;
+	width: 80%;
+	padding: 15px;
+	margin: 0 auto;
+	margin-top: 70px;
+	border-radius: 10px;
+	border: #04315B 1px solid;
+	box-shadow: 0px 0px 20px;
+}
+
+hr{
+	background-image: linear-gradient(to right, #005, red);
+	height: 3px;
+}
+
+h1{
+	font-size: 36pt;
+	background: -webkit-linear-gradient(red, #04315B);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	-ms-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-o-text-fill-color: transparent;
+	-ms-text-fill-color: transparent;
+	margin: 0px 0px 70px 70px;
+}
+
+h2, h3, h4 {
+	color: #005;
+	font-size: 26pt;
+	margin: 0px 70px 0px 70px;
+}
+
+p {
+	color: black;
+	font-size: 18pt;
+	text-indent: 50px;
+	line-height: 20pt;
+	margin: 0px 70px 0px 70px;
+}
+
+a {
+	text-align: bold;
+	text-decoration: none;
+}
+
+a.link {
+	color: red;
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: bold;
+	text-decoration: none;
+	margin: 0px 0px 30px 30px;
+}
+
+a.link:visited {
+	color: red;
+	font-size: 14pt;
+	text-decoration: none;
+	margin: 0px 0px 50px 50px;
+}
+
+table.selecao {
+	width: 100%;
+	text-align: justify;
+	margin: 0px 0px 70px 70px;
+	color: #04315B;
+	font-weight: bold;
+}
+
+img.corpo {
+	display: block;
+	width: 80%;
+	height: auto;
+	margin: 0px auto;
+}
+
+ol,ul,li{
+	margin: 0px 0px 70px 70px;	
+}
+
+ol.opcao{
+	color:#005; 
+	margin: 0px 0px 70px 70px;
+}
+
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  header tr td {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  tr td {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  header tr td {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+label {
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+/*Forum*/
+
+#geral{
+	width: 80%;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.cadast_post {
+	padding: 3px;
+	margin: 5px 0px 0px 455px;
+	background-color: #FFF; 
+	color: #005;
+	font-weight: bold;
+	border-color: #005;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+#postagem {
+	background-image: linear-gradient(to right, #005, red);
+	width: 70%;
+	padding: 50px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.postagem {
+	background:rgb(0, 0, 5, 0.2);
+	border: solid 1px white;
+	padding: 10px 10px 0px 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.camp {
+	font-style: italic;
+	color: #111;
+	margin: 20px 70px;
+	border-radius: 7px;
+}
+
+textarea {
+	width: 90%;
+	margin-top: 30px;
+} 
+
+.cad {
+	color: #FFF;
+  font-weight: bold;
+  font-size: 20pt;
+  text-indent: 3px;
+  text-align: justify;
+	line-height: normal;
+	margin: 30px 20px;
+}
+
+input {
+	border: solid 1px #999;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+
+small {
+	color: white;
+	text-indent: 50px;
+	text-align: right;
+	line-height: normal;
+	margin: 0px 40px;
+}
+
+.linha {
+	background: white;
+	height: 0px;
+}
+
+.abre_coment {
+	padding: 3px;
+	background-color: white;
+	color: #005;
+	font-weight: bold;
+	border-color: #005;
+	margin-left: 50px;
+	border-radius: 5px;
+}
+
+.abre_coment:hover {
+	cursor: pointer;
+}
+
+#comentario {
+	width: 60%;
+	padding: 50px;
+	margin: 0 auto;
+	border-radius: 10px;
+	display: none;
+}
+
+.comentario {
+	background:rgb(0, 0, 5, 0.2);
+	border: solid 1px white;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+/*LOGIN*/
+
+/*Caixa do Login*/
+#login {
+	background-image: linear-gradient(to right, #005, red);
+	width: 70%;
+	padding: 50px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin: 0 auto;
+	border-radius: 7px;
+}
+
+.camplog {
+	width: 90%;
+	font-style: italic;
+	color: #222;
+	margin: 5px 50px;
+	border-radius: 5px;
+}
+
+/*Botão do Login*/
+.cadast_login {
+	padding: 3px;
+	margin: 10px 50px 0px 50px;
+	background-color: #FFF; 
+	color: #005;
+	font-weight: bold;
+	text-align: center;
+	border-color: #005;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#erro {
+	background-color: red;
+	color: white;
+	font: 18px;
+	text-align: center;
+	align-items: center;
+	border-radius: 15px;
+	width: 30%;
+	margin: auto;
+}
+
+section.rodape {
+	width: 82%;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+footer {
+	background-image: linear-gradient(to right, rgba(0, 0, 85, 0.9), rgba(255, 0,0 , 0.8));
+	color: white;
+	padding: 15px;
+	margin: 0 auto;
+	border-radius: 10px;
+	border: black 1px solid;
+}
+
+address {
+	font-size: 12pt;
+	text-align: center;
+}

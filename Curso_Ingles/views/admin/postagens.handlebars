@@ -1,0 +1,26 @@
+<h1 class="titulo">Forum</h1>
+
+<hr>
+<a class="link" id="link" href="http://localhost:8081/admin/postagens">Publicações</a> |
+<a class="link" id="link" href="http://localhost:8081/admin/postagens/add">Nova Postagem</a>
+<hr>
+
+<br>
+
+<h2>Publicações</h2>
+
+<br>
+
+{{#each postagens}}
+  <div id="postagem">
+      <label class="cad">Nome: {{this.nomePost}}</label><br><br>
+      <div class="postagem">
+         <p class="cad">{{this.conteudoPost}}</p><br>
+         <hr class="linha">
+         <small>Publicado em: {{this.dataPost}}</small>
+      </div><br>
+  </div><br>
+{{else}}
+   <br>
+   <p>Nenhuma postagem registrada!</p>
+{{/each}}

@@ -1,0 +1,19 @@
+<h1 class="titulo">Forum</h1>
+
+<hr>
+<a class="link" id="link" href="http://localhost:8081/admin/postagens">Publicações</a> |
+<a class="link" id="link" href="http://localhost:8081/admin/postagens/add">Nova Postagem</a>
+<hr>
+
+<h2>Nova Postagem</h2>
+<br>
+<div id="postagem">
+   <form action="/admin/postagens/nova" method="POST">
+      <label class="cad">NOME: </label>
+      <input class="camp" type="text" name="nomePost" value="♙ Digite seu nome"><br><br>
+      <label class="cad">POSTAGEM: </label>
+      <textarea class="camp" name="conteudoPost" value="⌨ Digite sua postagem"></textarea><br>
+      <button type="submit" class="cadast_post">Criar Postagem</button>
+   </form>
+</div>
+<br>
