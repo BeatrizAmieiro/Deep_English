@@ -8,7 +8,9 @@ const Usuario = new Schema({
    },
    email: {
       type: String,
-      required: true
+      required: true,
+      unique: true,
+      lowercase: true
    },
    eadmin: {
       type: Number,
@@ -16,7 +18,8 @@ const Usuario = new Schema({
    },
    senha: {
       type: String,
-      required: true
+      required: true,
+      select: false
    }
 });
 
